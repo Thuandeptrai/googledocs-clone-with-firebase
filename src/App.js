@@ -6,6 +6,7 @@ import {
   useParams
 } from "react-router-dom";
 import HomePage from './HomePage'
+import Error from "./Error";
 
 
 function App() {
@@ -19,7 +20,11 @@ function App() {
       <Route path="/p/:id" >
         <TextEditor />
       </Route>
+      <Route >
+        <Error />
+      </Route>
     </Switch>
+    
   </Router>
   </>);
 }
